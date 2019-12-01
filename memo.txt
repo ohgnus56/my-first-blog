@@ -1,0 +1,22 @@
+python -m venv myvenv
+myvenv이라는 이름의 가상환경을 만듦
+<폴더구조>
+myvenv
+    -Include
+    -Lib
+    -Scripts
+
+myvenv\Scripts\activate
+myvenv폴더의 Scripts폴더안에 있는 activate를 실행시켜 가상환경 사용시작
+
+django-admin.py startproject mysite .
+현재 위치한 디렉토리에 mysite라는 이름의 장고 프로젝트를 만듦 .을 꼭 찍어야함
+<폴더구조>
+mysite
+    __init__.py
+    settings.py # 웹사이트 설정
+    urls.py # urlresolver가 사용하는 패턴 목록
+    wsgi.py
+manage.py # 사이트 관리 웹서버 시작
+
+
